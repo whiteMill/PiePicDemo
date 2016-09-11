@@ -84,6 +84,7 @@ public class PieView extends View {
         float height = (float) getHeight();
          /*中间小正方形边长的一半*/
         float halfSmallRec = ((float) getHeight())/80;
+
         percent = ((float) mBigNumber) / (mBigNumber + mSmallNumber);
         /*求饼状图的半径*/
         radius = Math.min(getWidth() * 1 / 8, getHeight() * 10 / 35);
