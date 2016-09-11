@@ -11,6 +11,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mpieView= (PieView) findViewById(R.id.pieView);
-        mpieView.setColor(0xFFff9900,0xFF3c78d8);
+        mpieView.setOverRunner("10%","90%",1,9,0xFFff9900,0xFF3c78d8);
     }
 }
