@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PiePicDemo</string>
+    <string name="big">大球</string>
+    <string name="small">小球</string>
+</resources>
