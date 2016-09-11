@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 
@@ -84,7 +85,6 @@ public class PieView extends View {
         float height = (float) getHeight();
          /*中间小正方形边长的一半*/
         float halfSmallRec = ((float) getHeight())/80;
-
         percent = ((float) mBigNumber) / (mBigNumber + mSmallNumber);
         /*求饼状图的半径*/
         radius = Math.min(getWidth() * 1 / 8, getHeight() * 10 / 35);
@@ -111,6 +111,11 @@ public class PieView extends View {
         float textBigWidth = textPaint.measureText(strBig);
         Paint.FontMetrics fontMetrics = textPaint.getFontMetrics();
         /*绘制上边大球数量*/
+        Log.d("TTT",fontMetrics.top+">>>>");
+        Log.d("TTT",fontMetrics.ascent+">>>>");
+        Log.d("TTT",fontMetrics.bottom+">>>>");
+        Log.d("TTT",fontMetrics.descent+">>>>");
+
         canvas.drawText(strBig, width * 9 / 20 + textBigWidth / 2, height * 28 / 60 - fontMetrics.top / 3, textPaint);
         /*小球数量*/
         String strSmall = strSmallName + mSmallNumber;
